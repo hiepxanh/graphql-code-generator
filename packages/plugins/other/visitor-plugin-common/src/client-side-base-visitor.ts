@@ -624,7 +624,7 @@ export class ClientSideBaseVisitor<
       return ` as unknown as DocumentNode`;
     }
 
-    return '';
+    return `as unknown as DocumentNode<${_resultType}, ${_variablesTypes}>`;
   }
 
   /**
